@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple-filer demo</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+	  <link href="/stylesheets/bootstrap.3.3.7.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+	    <div class="col-md-4">
+		    <div id="myID"></div>
+		    Choose a peer to send files to.
+		    <div id="peerListContainer"></div>
+		    <div class="form-group">
+			    <label for="inputFile">Select files</label>
+			    <input type="file" id="inputFile">
+		    </div>
+		    <button id="startTransfer" type="button" class="btn btn-primary" name="startTransfer">Send</button>
+	    </div>
+
+	    <div class="col-md-8">
+			<span id="fileSystemQuota"></span>
+			<ul id="filelist"></ul>
+		    <table class="table" id="taskList">
+			    <caption>File list</caption>
+			    <thead>
+			    <tr>
+				    <th>name</th>
+				    <th>progress</th>
+				    <th>size</th>
+				    <th>from</th>
+				    <th>to</th>
+				    <th>status</th>
+				    <th>action</th>
+			    </tr>
+			    </thead>
+			    <tbody>
+			    </tbody>
+		    </table>
+
+	    </div>
+    </div>
+
+    <script src="/javascripts/jquery.1.12.4.min.js"></script>
+    <script src="/javascripts/bundle.next.js?v=1"></script>
+  </body>
+</html>
