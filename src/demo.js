@@ -95,7 +95,7 @@ function removePeer(peer){
   $('#' + peer).closest("div.radio").remove()
 }
 
-var ws = new WebSocket('wss://192.168.31.111:8443');
+var ws = new WebSocket(window.WEBSOCKET_ADDR);
 ws.onopen = evt => {
   filer.signalingChannel = ws;
   console.log('webSocket connected');
